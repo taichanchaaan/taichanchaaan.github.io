@@ -1,0 +1,126 @@
+.puzzle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mode-buttons {
+  margin-bottom: 10px;
+}
+
+.mode-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.mode-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.size-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.size-input {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.new-game-button,
+.reset-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.image-drop-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#file-upload {
+  display: none;
+}
+
+#file-upload + label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px dashed #ccc;
+  margin-top: 10px;
+}
+
+.uploaded-image {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.board {
+  display: grid;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100%;
+  padding: 0;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.cell.empty {
+  background-color: #f2f2f2;
+}
+
+.stats,
+.rankings {
+  margin-top: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f9f9f9;
+}
